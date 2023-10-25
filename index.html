@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="adding">
+        <h1>Dashboard</h1>
+        <button class="add_btn">Добавить задачу</button>
+      </div>
+
+      <div class="select_look">
+        Показать задачи как:
+        <a class="table " href="#">Таблица</a>
+        <a class="tile active_select_btn" href="#">Плитка</a>
+      </div>
+
+      <div class="tasks_box">
+        <div class="task"></div>
+
+      </div>
+
+      <div class="modalka_bg">
+        <div class="modal_window">
+          <img id="close_modal" src="img/close_modal.png" alt="">
+          <h1>Добавить</h1>
+          <form>
+            <input class="heading" type="text" placeholder="Заголовок">
+            <input class="descr" type="text" placeholder="Описание">
+            <input class="time" type="time" placeholder="Время (type=time)">
+            <input class="date" type="date" placeholder="Время (type=date)">
+            <select id="status" name="status">
+              <option value="new">new</option>
+              <option value="progress">progress</option>
+              <option value="done">done</option>
+            </select>
+            <button class="modal_add_btn">Добавить</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <script src="./index.js"></script>
+  </body>
+</html>

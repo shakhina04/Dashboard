@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+    padding: 50px 100px;
+}
+.adding {
+    display: flex;
+    gap: 20px; 
+    align-items: center;
+}
+h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+button {
+    height: 46px;
+    width: 184px;
+    border-radius: 10px;
+    background-color: #007FFF;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+button:active {
+    background-color: #0565c5;
+}
+
+.select_look  {
+    padding: 30px 0;
+}
+.select_look a {
+    all: unset;
+    font-weight: 700;
+    font-size: 15px;
+    color: #979797;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.select_look .active_select_btn {
+    color: #007FFF;
+}
+
+table {
+    width: 1000px;
+}
+table td {
+	padding: 20px;
+	border: 1px solid black;
+}
+
+.modalka_bg {
+    width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+    left: 0;;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(1px);
+	padding: 20px;
+	display: none;
+    align-items: center;
+    justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+}
+.modal_window {
+    position: absolute;
+    width: 630px;
+    height: 577px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	gap: 10px;
+}
+.modal_window #close_modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.modal_window h1 {
+    font-weight: 700;
+    font-size: 50px;
+}
+.modal_window form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.modal_window form input {
+    width: 438px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 0 15px;
+}
+.modal_window form select {
+    width: 438px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 0 15px;
+}
+.modal_window form .modal_add_btn {
+    width: 438px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #0047FF;
+    font-size: 20px;
+}
+.modal_window form .modal_add_btn:active {
+    background-color: #0335be;
+}
+
+
+.tasks_box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.task{
+    width: 350.67px;
+    height: 220px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border:  1px solid gray;
+    margin-bottom: 5%;
+}
+.date_and_time {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+h2{
+    /* padding-top: 20px; */
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+p{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #A5A5B4;
+}
+.time {
+    font-weight: 600;
+    font-size: 15px;
+}
+.date {
+    font-weight: 600;
+    font-size: 15px;
+}
